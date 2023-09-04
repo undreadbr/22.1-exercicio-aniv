@@ -1,0 +1,32 @@
+@use 'variables';
+@use 'hero';
+@use 'components/_infos_bar';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Patua one, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    height: 260vh;
+    width: 100%;
+    margin: 0 auto;
+    
+    @media (max-width:540px){
+        max-width: 80%;
+        
+        
+    }
+    
+    @media (max-width:1024px){
+        max-width: 90%;
+        
+    }
+    
+}
+
